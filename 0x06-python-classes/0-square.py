@@ -9,7 +9,7 @@ This module includes a square class
 
 class Square:
     """
-    square is an empty class, that is no attributes or methods
+    This is an empty class, that is no attributes or methods
 
     """
     pass
