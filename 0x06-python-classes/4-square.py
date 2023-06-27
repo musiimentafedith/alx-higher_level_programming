@@ -28,6 +28,7 @@ class Square:
 
         """
         self.__size = size
+
     @property
     def size(self):
         """
@@ -38,7 +39,8 @@ class Square:
 
         """
         return self.__size
-    @setter
+
+    @size.setter
     def size(self, value):
         """
 
@@ -50,7 +52,7 @@ class Square:
         """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        elif size < 0:
+        elif value < 0:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
@@ -64,4 +66,3 @@ class Square:
 
         """
         return self.__size ** 2
-
