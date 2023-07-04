@@ -1,0 +1,30 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+>>> text = "God. is good"
+>>> text_indentation(text)
+God.
+<BLANKLINE>
+is good
+
+>>> text2 = "God? is good"
+>>> text_indentation(text2)
+God?
+<BLANKLINE>
+is good
+
+>>> text3 = "God: is good"
+>>> text_indentation(text3)
+God:
+<BLANKLINE>
+is good
+
+>>> text4 = "God. is? a: good, one"
+>>> text_indentation(text4)
+God.
+<BLANKLINE>
+is?
+<BLANKLINE>
+a:
+<BLANKLINE>
+good, one
