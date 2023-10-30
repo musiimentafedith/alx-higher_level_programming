@@ -11,10 +11,10 @@ def add_integer(a, b=98):
 
     """
     This function adds two integers
-    loats are type cast to int first before they are added.
+    floats are type cast to int first before they are added.
 
     raises:
-        TypeError, if are none float or int is added
+        TypeError, if a none float or int is added
 
     """
 
