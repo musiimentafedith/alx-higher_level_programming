@@ -48,3 +48,24 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((2 * self.__width) + (2 * self.__height))
+
+    def __str__(self):
+        """ returns easy to read string with relative
+        details of the object in this case '#'
+        """
+        if self.__width == 0 or self.__height == 0:
+            return ("")
+        temp = []
+        for i in range(self.__height):
+            for j in range(self.__width):
+                temp.append('#')
+            if i != self.__height - 1:
+                temp.append('\n')
+        return ("".join(temp))
+
+    def __repr__(self):
+        """ returns a string representation of the rectangle
+            to that is able to recreate the instance by
+            using eval()
+        """
+        return f'Rectangle("{self.__width}", "[self.__height]")'
